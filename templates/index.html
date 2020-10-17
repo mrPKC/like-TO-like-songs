@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head >
+<body style="background-image: url(/static/images/bg4.jpg);">
+    <h2 style="font-size: 50px;color:beige; text-align: center;">Hello !</h2>  
+    <h2 style="font-size: 30px;color:beige; text-align: center;">This is a song recommendation system </h2> 
+    <h3 style="font-size: 30px;color:beige; text-align: center;">Made with <3 by<span style="color: 	#FFD700;">M</span><span style="color: 	#332d0a;">K</span><span style="color: 	#FFD700;">P</span><span style="color: 	#FFD700;">K</span><span style="color: 	#2c2a1b;">C</span></h3>
+<form method="POST" action="/submit" style="text-align: center;">
+<input type="text" name="n" placeholder="Enter the song" style="width: 40%; height: 20px; padding: 1%; border-radius: 15px; font-size: 20px;">
+<br>
+<input type="submit" value="Submit" style="background-color: lightseagreen;  border: none;color: white;cursor: pointer;height: 30px;width: 20%s;margin: 1%;border-radius: 10px;font-size: 20px;">
+</form>
+<ol>
+    {% for i in range (l)%} 
+        <h2 style="font-size: 20px;color: antiquewhite; text-align: center;">{{li[i][0]}}</h2>
+    {%endfor%}
+</ol>
+</body>
+</html>
